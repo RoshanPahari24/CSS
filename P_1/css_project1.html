@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css_project_1</title>
+</head>
+<style>
+    *{
+        margin: 0%;
+        width: 100%;
+        height: 100%;
+    }
+    .bg {
+        width:100%;
+        height:100vh;
+        background-image:url('./bart.jpg');
+        background-size: cover;
+        }
+    #video{
+        width: 450px;
+        height: 300px;
+        position:absolute;
+        bottom: 5px;
+        right: 30px; 
+    }
+    #video video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+</style>
+
+<body>
+
+    <div class="bg"></div>
+    
+    <div id="video">
+        <video src="./Listen, this song .to Bart Simpson!.mp4" controls autoplay loop></video>
+    </div>
+
+</body>
+
+</html>
