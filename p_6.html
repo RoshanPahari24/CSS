@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css_project_5</title>
+    <!-- cdn for bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<style>
+    *{
+        margin: 0;
+        box-sizing: border-box;
+        transition: 0.4s;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    :root{
+        --main-color:#37517E;
+    }
+
+    #teams{
+        /* background: #c33a3a2f; */
+        padding:2%;
+    }
+    #teams .header{
+        /* background:rgba(29, 13, 13, 0.151); */
+        text-align: center;
+        padding: 20px;
+    }
+    #teams .header h2{
+        color: var(--main-color);
+        font-size: 30px;
+        position: relative;
+        padding: 15px;
+        /* margin-bottom: 10px; */
+        /* font-weight: 500; */
+    }
+    #teams .header hr{
+        width: 150px;
+        margin:auto;
+        border: 1px solid rgb(83, 82, 82);
+
+    }
+    #teams .header h2:after{
+        content: '';
+        display: block;
+        width: 68px;
+        height: 2.5px;
+        background:#47B2E4;
+        margin: auto;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -2.1px;
+        /* top: 0px; */
+    }
+
+    #teams .header p{
+        color: rgb(81, 80, 80);
+        margin: 10px;
+    }
+    #teams .content{
+        /* background: #5e5c5c; */
+        padding: 20px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    #teams .content .team-item{
+        width: 45%;
+        height: 150px;
+        /* border: 1px solid grey; */
+        box-shadow: 0 0 4px;
+        padding: 10px;
+        display: flex;
+        margin: 20px;
+        border-radius: 3px;
+        transition: 0.5s ease-out;
+
+    }
+    #teams .content .team-item:hover{
+        transform: translateY(-10px);
+
+    }
+
+    #teams .content .team-item .img{
+        width: 130px;
+        height: 100%;
+        border-radius: 50%;
+        box-shadow: 0 0 5px;
+        overflow: hidden;
+        margin: 0 10px;
+
+    }
+     #teams .content .team-item .detail{
+        width: 300px;
+        padding: 5px;
+     }
+     #teams .team-item .detail h3{
+        color:var(--main-color);
+
+     }
+     #teams .team-item .detail p{
+        color: rgb(3, 3, 3);
+        margin: 2px 0  10px ;
+     }
+
+     #teams .team-item .detail hr{
+        width: 60px;
+        border:1px solid #E3E3E3;
+     }
+     #teams .team-item .icons a{
+        color: black;
+        font-size: 15px;
+        margin:0 10px 0 0;
+        /* border:1px solid grey; */
+        background:rgb(255, 254, 254);
+        border-radius: 50%;
+        padding: 2px;
+
+     }
+    
+</style>
+<body>
+    <div class="teams" id="teams">
+        <div class="header">
+            <h2>Teams</h2>
+            <hr>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum.</p>
+        </div>
+        <div class="content">
+            <div class="team-item">
+                <div class="img">
+                    <img src="https://bootstrapmade.com/content/demo/Arsha/assets/img/person/person-m-7.webp" alt="p1" width="100%" loading="lazy">
+                </div>
+                <div class="detail">
+                    <h3>Walter White</h3>
+                    <p><small>Cheif Executive Officer</small></p>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <div class="icons">
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="team-item">
+                <div class="img">
+                    <img src="https://bootstrapmade.com/content/demo/Arsha/assets/img/person/person-f-8.webp" alt="p1" width="100%" loading="lazy">
+                </div>
+                <div class="detail">
+                    <h3>Sarah Jhonson</h3>
+                    <p><small>Product Manager</small></p>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <div class="icons">
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="team-item">
+                <div class="img">
+                    <img src="https://bootstrapmade.com/content/demo/Arsha/assets/img/person/person-m-6.webp" alt="p1" width="100%" loading="lazy">
+                </div>
+                <div class="detail">
+                    <h3>William Anderson</h3>
+                    <p><small>CTO</small></p>
+                    <hr>    
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <div class="icons">
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="team-item">
+                <div class="img">
+                    <img src="https://bootstrapmade.com/content/demo/Arsha/assets/img/person/person-f-4.webp" alt="p1" width="100%" loading="lazy">
+                </div>
+                <div class="detail">
+                    <h3>Amanda Jepson</h3>
+                    <p><small>Accountant</small></p>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <div class="icons">
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
