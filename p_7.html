@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading _animation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html, body{
+            height: 100%;
+            width: 100%;
+        }
+        .bar{
+            margin:10% auto;
+            background: #000;
+            width: 500px;
+            height: 10px;
+            border: 1px solid ;
+            border-radius: 50px;
+
+        }
+        .color{
+            width: 0%;
+            height: 100%;
+            background: #bbff00;
+            border-radius: 50px;
+            animation: rox 5s ease-out forwards infinite;
+        }
+
+        @keyframes rox {
+            from{}
+            to{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bar">
+        <div class="color"></div>
+    </div>
+</body>
+</html>
