@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup form</title>
+    <style>
+        :root{
+            --color: royalblue;
+            --font-family: cursive;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html, body{
+            height: 100%;
+            width: 100%;
+        }
+        .main{
+            /* font-family: var(--font-family); */
+            /* background: #000; */
+            margin: 2% auto;
+            height: 85%;
+            width: 90%;
+            display: flex;
+            justify-content:space-evenly;
+            align-items: center;
+        }
+        .right{
+            /* background: #faf6f6; */
+            height: 80%;
+            width: 40%;
+        }
+        .right img{
+            width: 100%;
+            height: 100%;
+        }
+
+        .left{
+            font-family: var(--font-family);
+            background: #9593931f;
+            border-radius: 45px;
+            box-shadow: 0 0 5px;
+            height: 70%;
+            width: 35%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            padding: 20px;
+        } 
+        .header h1{
+            text-align: center;
+            margin:2px auto;
+            background:url(https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3cWdjbGtjY3R3YWw5ZHMxcnZnenBjOGIzbGJoZDNkaWF4Ymo4OWxnOCZlcD12MV9naWZzX3JlbGF0ZWQmY3Q9Zw/ORPTzrpiJrWanpghZT/giphy.gif);
+            background-clip:text ;
+            color: transparent;
+            font-size: 35px;
+        }
+        .header hr{
+            width: 80%;
+            margin: auto;
+        }
+        .content{
+        
+            border: 1px solid black;
+            border-radius:20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap:5px;
+            margin: 20px 20px 20px 20px;
+            padding:20px;
+            
+        }
+
+        .content input{
+            height: 45px;
+            border: 1px solid black;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .content button{
+            
+            padding: 10px;
+            width: 45%;
+            border-radius: 25px;
+            margin:auto;
+            margin-top: 10px;
+            font-family: var(--font-family);
+        } 
+        .buttons{
+            display: flex;
+            justify-content: center;
+        }
+        .buttons :hover{
+            background:#f39c22cf;
+            color: white;
+            
+        }
+        .test{
+            text-align: center;
+            height: 200px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="left">
+            <div class="header">
+                <h1>Welcome Back!</h1><hr>
+            </div>
+            <form class="content">
+
+                <label for="uname">Username</label>
+                <input type="text" id="uname" placeholder="Enter Username" required>
+
+                <label for="pw">Password</label>
+                <input type="password" id="pw" placeholder="Enter password" required>
+
+                <label for="cpw">Confirm password</label>
+                <input type="text" id="cpw" placeholder="Enter Username" required>
+                
+                <div class="buttons">
+
+                <button> login</button>
+                <button>Submit</button>
+                </div>
+                
+
+
+
+            </form>
+
+        </div>
+        <div class="right">
+            <img src="https://static.vecteezy.com/system/resources/previews/020/946/697/non_2x/3d-illustration-chatting-when-sitting-in-the-sofa-free-png.png" alt="">
+        </div>
+    </div>
+
+    </div>
+</body>
+</html>
