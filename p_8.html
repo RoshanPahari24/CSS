@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bg_animation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html, body{
+            height: 100%;
+            width: 100%;
+        }
+
+        .box{
+            height: 800px;
+            width: 100%;
+            background: #000;
+            margin:5% auto;
+            animation: rgx 5s infinite ease-in-out;
+        }
+        @keyframes rgx{
+            0%{
+                background:linear-gradient(to right, #153b8acb, #1eb6afa2), url(https://p.w3layouts.com/demos_new/template_demo/23-08-2021/dentition-liberty-demo_Free/1619898409/web/assets/images/banner2.jpg);
+                background-size:100% 100%;
+                object-fit: fill;
+            }
+
+            25%{
+                background:linear-gradient(to right, #153b8acb, #1eb6afa2), url(https://p.w3layouts.com/demos_new/template_demo/23-08-2021/dentition-liberty-demo_Free/1619898409/web/assets/images/banner3.jpg);
+                background-size:100% 100%;
+                object-fit: fill;
+
+            }
+            50%{
+                background:linear-gradient(to right, #153b8acb, #1eb6afa2), url(https://p.w3layouts.com/demos_new/template_demo/23-08-2021/dentition-liberty-demo_Free/1619898409/web/assets/images/banner4.jpg);
+                background-size:100% 100%;
+                object-fit: fill;
+            }
+            75%{
+                background:linear-gradient(to right, #153b8acb, #1eb6afa2), url( https://p.w3layouts.com/demos_new/template_demo/23-08-2021/dentition-liberty-demo_Free/1619898409/web/assets/images/banner1.jpg);
+                background-size:100% 100%;
+                object-fit: fill;
+            }
+            100%{
+                background:linear-gradient(to right, #153b8acb, #1eb6afa2), url(https://p.w3layouts.com/demos_new/template_demo/23-08-2021/dentition-liberty-demo_Free/1619898409/web/assets/images/banner2.jpg);
+                background-size:100% 100%;
+                object-fit: fill;
+                /* scale: 1.5; */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+    </div>
+    
+</body>
+</html>
